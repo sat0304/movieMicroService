@@ -1,0 +1,25 @@
+{
+  "name": "moviemicroservice",
+  "version": "1.0.0",
+  "description": "movie microservice for ivi like project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sat0304/movieMicroService.git"
+  },
+  "author": "sat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sat0304/movieMicroService/issues"
+  },
+  "homepage": "https://github.com/sat0304/movieMicroService#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
