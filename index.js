@@ -7,8 +7,9 @@ const PORT = 3000;
 
 app.use(bodyParser.json("application/json"));
 
-app.post('/sendLog', async (req, res, next) => {
-    await producer.publishMessage(req.body.logType, req.body.message);
+app.post('/sendLog', (req, res, next) => {
+    console.log(`routingKey is ${JSON.stringify(req.body)} and ${req.body.message}`);
+    producer.publishMessage(req.body.logType, req.body.message);
     res.send();
 });
 
